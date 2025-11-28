@@ -1,14 +1,18 @@
+import Providers from "./components/providers/providers";
+import { ThemeToggler } from "./components/theme-toggle";
+import Hero from "./sections/hero";
+
 const App = () => {
-    // const handleClick = () => {
-    //     console.log("ee");
-    // };
-    return (
-        <main>
-            <div>
-                <h1 className="text-3xl">Welcome to my 3d portfolio</h1>
-            </div>
-        </main>
-    );
+  return (
+    <>
+      <Providers>
+        {/* <div className="bg-muted p-2">
+          <ThemeToggler></ThemeToggler>
+        </div> */}
+        <Hero></Hero>
+      </Providers>
+    </>
+  );
 };
 
 export default App;
