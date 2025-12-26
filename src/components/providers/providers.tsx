@@ -12,16 +12,16 @@
  * </Providers>
  */
 
-import { ThemeProvider } from "./theme-provider";
+import { ThemeProvider } from './theme-provider'
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
-    return (
-        <>
-            <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-                {children}
-            </ThemeProvider>
-        </>
-    );
-};
+  return (
+    <>
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        {children}
+      </ThemeProvider>
+    </>
+  )
+}
 
-export default Providers;
+export default Providers

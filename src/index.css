@@ -459,7 +459,7 @@ section {
     transform: translateY(-25%);
   }
   50% {
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
   }
   75% {
     transform: translateY(-75%);

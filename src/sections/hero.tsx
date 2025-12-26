@@ -1,13 +1,12 @@
-import Button from "@/components/button";
-import HeroExperience from "@/components/hero-models/hero-experience";
-import { words } from "@/constants";
-import gsap from "gsap";
-import { useGSAP } from '@gsap/react';
-
+import Button from '@/components/button'
+import HeroExperience from '@/components/hero-models/hero-experience'
+import { words } from '@/constants'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 
 const Hero = () => {
     useGSAP(()=>{
-        gsap.fromTo('.hero-text h1' , {opacity:0 , y:50} , {opacity: 1 , y:0 , stagger:0.2,duration:1 , ease:"power2.inOut" })
+        gsap.fromTo('.hero-text h1' , {opacity:0 , y:50} , {opacity: 1 , y:0 , stagger:0.2,duration:1 , ease:'power2.inOut' })
     }) 
   return (
     <section id="hero" className="relative h-screen overflow-hidden">
@@ -20,8 +19,8 @@ const Hero = () => {
         <header className="flex w-screen flex-col justify-center px-5 md:w-full md:px-20">
           <div className="flex flex-col gap-7">
             <div className="hero-text">
-              <h1 >
-                Shaping{" "}
+              <h1>
+                Shaping{' '}
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((word) => (
@@ -37,10 +36,11 @@ const Hero = () => {
                         <span>{word.text}</span>
                       </span>
                     ))}
-                  </span>{" "}
-                </span>{" "}
+                  </span>{' '}
+                </span>{' '}
               </h1>
-              <h1 > into Real Projects </h1 > <h1> that Deliver Results </h1>
+              <h1> into Real Projects </h1>
+              <h1> that Deliver Results </h1>
             </div>
             <h2 className="text-white-50 pointer-events-none relative z-10 md:text-xl">
               Hi, I am Sanjay, a developer based in India.
@@ -56,12 +56,11 @@ const Hero = () => {
         <figure>
           <div className="hero-3d-layout">
             <HeroExperience></HeroExperience>
-            
           </div>
-        </figure>  
+        </figure>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

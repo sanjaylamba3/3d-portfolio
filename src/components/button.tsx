@@ -1,12 +1,12 @@
 interface IButtonProps {
-  text: string;
-  className: string;
-  id: string;
+  text: string
+  className: string
+  id: string
 }
 
 const Button = ({ text, className, id }: IButtonProps) => {
   return (
-    <a id={id} href="" className={`${className ?? ""} cta-wrapper`}>
+    <a id={id} href={`#${id}`} className={`${className ?? ''} cta-wrapper`}>
       <div className="cta-button group">
         <div className="bg-circle"></div>
         <p className="text">{text}</p>
@@ -15,7 +15,7 @@ const Button = ({ text, className, id }: IButtonProps) => {
         </div>
       </div>
     </a>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

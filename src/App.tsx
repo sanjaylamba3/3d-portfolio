@@ -1,6 +1,6 @@
-import Providers from "./components/providers/providers";
-import { ThemeToggler } from "./components/theme-toggle";
-import Hero from "./sections/hero";
+import Providers from './components/providers/providers'
+import { ThemeToggler } from './components/theme-toggle'
+import Hero from './sections/hero'
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <Hero></Hero>
       </Providers>
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
